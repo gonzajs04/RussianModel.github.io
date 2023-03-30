@@ -1,0 +1,290 @@
+:root {
+  --fuentePrincipal: "Share Tech Mono", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  font-family: var(--fuentePrincipal);
+}
+
+html {
+  box-sizing: inherit;
+  height: 100vh;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #e9e7da;
+  background-repeat: no-repeat;
+  overflow-x:hidden;
+  overflow-y: hidden;
+}
+.header {
+  position: relative;
+  height: 100%;
+}
+
+.navegation {
+  padding:2rem 0;
+
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.navegation a {
+  text-decoration: none;
+  width: 100%;
+  color: #616466;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: filter .3s ease-in-out;
+}
+
+.navegation a:hover{
+  filter: drop-shadow(10px 10px 4px #929292);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.container-img-mujer {
+  width: 36%;
+
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1000;
+}
+.container-img-mujer img{
+    object-fit: cover;
+}
+
+.data-noimg {
+  height: 100%;
+}
+
+
+.other-data {
+  padding: 2rem 0;
+  width: 100%;
+z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.other-data p{
+  margin: 0;
+}
+.years h2,
+.robotic h2 {
+  font-size: 3.5rem;
+  margin: 0;
+  color: #616466;
+}
+.years p,
+.robotic p,
+.infinite p {
+  font-weight: 600;
+  
+}
+.infinite img {
+  width: 4rem;
+}
+.infinite p{
+    color: #616466;
+}
+
+.robotic h2,
+p {
+  color: #000000;
+}
+
+.details{
+    background-color: #D8D6CC;
+    display: flex;
+    width: 45%;
+
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 0 1rem;
+    z-index: -1;
+    animation: aparecerDiv 1.2s;
+    position: absolute;
+    right: 50%;
+    top: 10%;
+    padding: 0 3rem;
+}
+.details h2{
+    color: #3E4348;
+    font-size: 2.1rem;
+    font-weight: 800;
+    margin-left: 0.5rem;
+}
+.container-flecha{
+    width: 20px;
+   
+    animation: saltarsacudir 2s linear infinite;
+}
+.container-flecha img:hover{
+  cursor: pointer;
+}
+.container-flecha img{
+    object-fit: cover;
+}
+.container-flecha:hover{
+    cursor: pointer;
+}
+
+.center-left{
+    position: absolute;
+    top: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.22rem;
+    padding: .3rem 0;
+    width: 50%;
+    background-color: #393E44;
+}
+
+.center-left p{
+    color: #C4C4BB;
+    width: 40%;
+
+}
+
+
+.center-right{
+    background-color: #D8D6CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E9E7DA;
+    text-align: left !important;
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    width: 50%;
+    height: 110px;
+}
+
+.container-right-desc{
+  position: relative;
+  width: 100%;
+}
+.container-right-desc{
+  max-width: 100%;
+  width: 100%;
+}
+.center-right p{
+    margin: 0;
+    color: #E9E7DA;
+    line-height: 3.8rem;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+ 
+    
+}
+.back{
+  position: absolute;
+  font-size: 4.7rem;
+
+}
+
+
+
+.center-right-fp{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.center-right-fp p{
+    color: #3d4247 !important;
+    font-size: 3rem;
+    animation: titiliar 2s linear infinite;
+    font-weight: 500;
+
+
+}
+
+
+@keyframes saltarsacudir {
+
+  0%{
+    transform: translateY(-5px);
+  }
+  20%{
+    transform: translateY(0);
+  }
+  35%{
+    transform: rotate(40deg);
+  }
+  58%{
+    transform: rotate(-30deg);
+  }
+  78%{
+    transform: rotate(30deg);
+
+  }
+
+  100%{
+    
+    transform: translateY(-5px);
+  
+  }
+
+  
+}
+
+
+/* @keyframes titiliar {
+  
+    0%,10%,15%,20%,35%,40%,50%,55%,58%,59%{
+        opacity: 1;
+    }
+     30%,45%,0%,90%,100%{
+        opacity: 0;
+    }
+
+  
+} */
+
+
+@keyframes aparecerDiv {
+  0%{
+    width: 0%;
+    opacity: 0;
+  }
+  100%{
+    width: 41%;
+    opacity: 1;
+  }
+}
+
+
+
+
+
