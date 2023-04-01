@@ -60,11 +60,12 @@ img {
   height: 100%;
 }
 .container-img-mujer {
-  width: 36%;
-
+  width: 32%;
+  height: 100%;
   position: relative;
   left: 0;
   right: 0;
+  bottom: 0;
   margin: 0 auto;
   z-index: 1000;
 }
@@ -95,12 +96,15 @@ z-index: 9999;
 .robotic h2 {
   font-size: 3.5rem;
   margin: 0;
-  color: #616466;
+ 
+}
+.robotic h2{
+  color: #5F6265 !important;
 }
 .years p,
-.robotic p,
 .infinite p {
   font-weight: 600;
+  color: #32373E;
   
 }
 .infinite img {
@@ -110,31 +114,31 @@ z-index: 9999;
     color: #616466;
 }
 
-.robotic h2,
+.robotic,
 p {
-  color: #000000;
+  color: #5F6265;
+
 }
 
 .details{
     background-color: #D8D6CC;
     display: flex;
-    width: 45%;
-
+    width: fit-content;
+  justify-content: flex-start;
     flex-direction: row;
     align-items: center;
-    text-align: left;
     padding: 0 1rem;
     z-index: -1;
     animation: aparecerDiv 1.2s;
     position: absolute;
     right: 50%;
     top: 10%;
-    padding: 0 3rem;
+    padding: 0 6rem 0 1.5rem
 }
 .details h2{
     color: #3E4348;
-    font-size: 2.1rem;
-    font-weight: 800;
+    font-size: 1.7rem;
+    font-weight: 300;
     margin-left: 0.5rem;
 }
 .container-flecha{
@@ -152,14 +156,20 @@ p {
     cursor: pointer;
 }
 
+.center{
+  position: relative;
+  top: 30%;
+}
+
 .center-left{
     position: absolute;
-    top: 40%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.22rem;
-    padding: .3rem 0;
+   
+    padding: .9rem 0;
+    margin: 0;
     width: 50%;
     background-color: #393E44;
 }
@@ -180,7 +190,7 @@ p {
     text-align: left !important;
     position: absolute;
     right: 0%;
-    top: 40%;
+
     width: 50%;
     height: 110px;
 }
@@ -282,6 +292,59 @@ p {
     width: 41%;
     opacity: 1;
   }
+}
+
+@keyframes aparecerDiv2 {
+  0%{
+    width: 0%;
+    opacity: 0;
+  }
+  100%{
+    width: 20%;
+    opacity: 1;
+  }
+}
+
+
+.first-data{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.contact{
+  background-color: #393E44;
+  position: absolute;
+  bottom: 30%;
+  right: 23%;
+  animation: aparecerDiv2 1.2s;
+  padding: .5em 1.9rem;
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contact .container-flecha{
+  animation: none;
+}
+
+.contact .container-flecha img{
+  margin-left: .2rem;
+
+}
+.contact h2{
+  color: #E4E2D6;
+  font-size: 1.7rem;
+  font-weight: 100;
+  letter-spacing: .5px;
+
+
+
+
 }
 
 
