@@ -1,5 +1,5 @@
 :root {
-  --fuentePrincipal: "Share Tech Mono", monospace;
+  --fuentePrincipal: "Poppins", sans-serif;
 }
 
 h1,
@@ -44,9 +44,10 @@ body {
 .navegation a {
   text-decoration: none;
   width: 100%;
+  font-size: .8rem;
   color: #616466;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   transition: filter .3s ease-in-out;
 }
 
@@ -133,11 +134,11 @@ p {
     position: absolute;
     right: 50%;
     top: 10%;
-    padding: 0 6rem 0 1.5rem
+    padding: .5rem 6rem .5rem 1.7rem
 }
 .details h2{
     color: #3E4348;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 300;
     margin-left: 0.5rem;
 }
@@ -191,7 +192,7 @@ p {
     position: absolute;
     right: 0%;
 
-    width: 50%;
+    width: 45%;
     height: 110px;
 }
 
@@ -233,7 +234,7 @@ p {
 }
 .center-right-fp p{
     color: #3d4247 !important;
-    font-size: 3rem;
+    font-size: 2.2rem;
     animation: titiliar 2s linear infinite;
     font-weight: 500;
 
@@ -289,7 +290,7 @@ p {
     opacity: 0;
   }
   100%{
-    width: 41%;
+    width: 33%;
     opacity: 1;
   }
 }
@@ -320,8 +321,8 @@ p {
   bottom: 30%;
   right: 23%;
   animation: aparecerDiv2 1.2s;
-  padding: .5em 1.9rem;
-  width: 15%;
+  padding: .5em 2.3rem;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -338,7 +339,7 @@ p {
 }
 .contact h2{
   color: #E4E2D6;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 100;
   letter-spacing: .5px;
 
