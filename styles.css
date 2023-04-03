@@ -97,29 +97,27 @@ z-index: 9999;
 .robotic h2 {
   font-size: 3.5rem;
   margin: 0;
+  color: #393E44
+
  
 }
-.robotic h2{
-  color: #5F6265 !important;
-}
+
 .years p,
 .infinite p {
-  font-weight: 600;
-  color: #32373E;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #474B50;
+
+
   
 }
 .infinite img {
   width: 4rem;
 }
-.infinite p{
-    color: #616466;
+.robotic h2,p{
+  color: #E6E3D6;
 }
 
-.robotic,
-p {
-  color: #5F6265;
-
-}
 
 .details{
     background-color: #D8D6CC;
@@ -132,7 +130,7 @@ p {
     z-index: -1;
     animation: aparecerDiv 1.2s;
     position: absolute;
-    right: 50%;
+    right: 55%;
     top: 10%;
     padding: .5rem 6rem .5rem 1.7rem
 }
@@ -171,7 +169,7 @@ p {
    
     padding: .9rem 0;
     margin: 0;
-    width: 50%;
+    width: 48%;
     background-color: #393E44;
 }
 
@@ -319,7 +317,7 @@ p {
   background-color: #393E44;
   position: absolute;
   bottom: 30%;
-  right: 23%;
+  right: 25%;
   animation: aparecerDiv2 1.2s;
   padding: .5em 2.3rem;
   width: fit-content;
